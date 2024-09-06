@@ -17,6 +17,17 @@ systemctl status barchetta2phy.service
 journalctl | grep barchetta2
 ```
 
+## GitLab
+
+```shell
+git config user.name "ChristeeKuo"
+git config user.email "Christee.Kuo@quantatw.com"
+git stash
+git checkout -b christee_dev
+git stash apply
+git push origin christee_dev
+```
+
 ## SDR & SEL
 
 I believe that when we run `ipmitool sdr elist`, it references the `[xxx]-ipmi-sensors.yaml` file and retrieves data from the corresponding bus path based on the file's content.
